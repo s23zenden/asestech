@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension version="3.0" type="template" client="site" method="upgrade">
+	<name>asestech</name>
+	<creationDate>Febuary 2015</creationDate>
+	<author>Felix Aweh</author>
+	<authorEmail>s23zenden@gmail.com</authorEmail>
+	<authorUrl>https://www.asestech.com</authorUrl>
+	<copyright>Copyright (C) 2014 - 2015 asestech. All rights reserved.</copyright>
+	<license>Commercial</license>
+	<version>2.0.0</version>
+	<description>Asestech template</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>less</folder>
+        <folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>fonts</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions>
+		<position>header</position>
+        <position>menu</position>
+        <position>carousel</position>
+		<position>core1</position>
+		<position>core2</position>
+		<position>core3</position>
+		<position>core4</position>
+        <position>core5</position>
+        <position>core6</position>
+        <position>core7</position>
+        <position>right</position>
+        <position>left</position>
+        <position>partners</position>
+        <position>footer</position>
+    </positions>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="general" label="General">
+				<field name="logo_text" type="text" label="Logo text" description="Enter your logo text"/>
+				<field name="copyright_text" type="text" label="Copyright text" description="Enter your copyright text"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

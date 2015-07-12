@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Mod Asestech Footer</name>
+    <author>Felix Aweh</author>
+    <creationDate>February 2015</creationDate>
+    <copyright>Copyright (C) 2014 - 2015 Intracp. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>s23zenden@gmail.com</authorEmail>
+    <version>1.0.0</version>
+    <description>Footer</description>
+    <files>
+        <file module="mod_asestech_footer">mod_asestech_footer.php</file>
+        <file>html.php</file>
+        <file>mod_asestech_footer.xml</file>
+
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="copyright_text" type="text" default="@ 2015 Asestech Engineering" label="Copyrights"></field>
+                <field name="street" type="text" default="" label="Street"></field>
+                <field name="postcode" type="text" default="" label="Postcode"></field>
+                <field name="telephone_number" type="text" default="" label="Telephone number"></field>
+                <field name="email" type="text" default="" label="Email"></field>
+
+                <field name="facebook_link" type="text" default="" label="Facebook Link"></field>
+                <field name="facebook_image" type="media" default="" label="Facebook image" directory="stories"></field>
+
+                <field name="twitter_link" type="text" default="" label="Twitter Link"></field>
+                <field name="twitter_image" type="media" default="" label="Twitter image" directory="stories"></field>
+
+                <field name="linkedin_link" type="text" default="" label="LinkedIn Link"></field>
+                <field name="linkedin_image" type="media" default="" label="LinkedIn image" directory="stories"></field>
+
+                <field name="googleplus_link" type="text" default="" label="Google+ Link"></field>
+                <field name="googleplus_image" type="media" default="" label="Google+ image" directory="stories"></field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Mod Asestech Market</name>
+    <author>Felix Aweh</author>
+    <creationDate>February 2015</creationDate>
+    <copyright>Copyright (C) 2014 - 2015 Intracp. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>s23zenden@gmail.com</authorEmail>
+    <version>1.0.0</version>
+    <description>Asestech Markets</description>
+    <files>
+        <file module="mod_asestech_markets">mod_asestech_markets.php</file>
+        <file>html.php</file>
+        <file>mod_asestech_markets.xml</file>
+
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="market_1_heading" type="text" default="" label="Market-1-heading"></field>
+                <field name="market_1_intro" type="text" default="" label="Market-1-intro"></field>
+                <field name="market_1_image" type="media" default="" label="Market-1-image" directory="stories"></field>
+                <field name="market_1_link" type="text" default="" label="Market-1 link"></field>
+
+                <field name="market_2_heading" type="text" default="" label="Market-2-heading"></field>
+                <field name="market_2_intro" type="text" default="" label="Market-2-intro"></field>
+                <field name="market_2_image" type="media" default="" label="Market-2-image" directory="stories"></field>
+                <field name="market_2_link" type="text" default="" label="Market-2 link"></field>
+
+                <field name="market_3_heading" type="text" default="" label="Market-3-heading"></field>
+                <field name="market_3_intro" type="text" default="" label="Market-3-intro"></field>
+                <field name="market_3_image" type="media" default="" label="Market-3-image" directory="stories"></field>
+                <field name="market_3_link" type="text" default="" label="Market-3 link"></field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

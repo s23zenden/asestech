@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Mod Asestech Side Menu</name>
+    <author>Felix Aweh</author>
+    <creationDate>February 2015</creationDate>
+    <copyright>Copyright (C) 2014 - 2015 Intracp. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>s23zenden@gmail.com</authorEmail>
+    <version>1.0.0</version>
+    <description>Asestech Side Menu</description>
+    <files>
+        <file module="mod_asestech_sidemenu">mod_asestech_sidemenu.php</file>
+        <file>html.php</file>
+        <file>mod_asestech_sidemenu.xml</file>
+
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="menu_item_1" type="text" default="" label="Link_Title"></field>
+                <field name="menu_item_1_url" type="url" default="" label="Link_URL"></field>
+
+                <field name="menu_item_2" type="text" default="" label="Link_Title"></field>
+                <field name="menu_item_2_url" type="url" default="" label="Link_URL"></field>
+
+                <field name="menu_item_3" type="text" default="" label="Link_Title"></field>
+                <field name="menu_item_3_url" type="url" default="" label="Link_URL"></field>
+
+                <field name="menu_item_4" type="text" default="" label="Link_Title"></field>
+                <field name="menu_item_4_url" type="url" default="" label="Link_URL"></field>
+
+                <field name="menu_item_5" type="text" default="" label="Link_Title"></field>
+                <field name="menu_item_5_url" type="url" default="" label="Link_URL"></field>
+
+                <field name="menu_item_6" type="text" default="" label="Link_Title"></field>
+                <field name="menu_item_6_url" type="url" default="" label="Link_URL"></field>
+
+                <field name="menu_item_7" type="text" default="" label="Link_Title"></field>
+                <field name="menu_item_7_url" type="url" default="" label="Link_URL"></field>
+
+                <field name="menu_item_8" type="text" default="" label="Link_Title"></field>
+                <field name="menu_item_8_url" type="url" default="" label="Link_URL"></field>
+
+                <field name="menu_item_9" type="text" default="" label="Link_Title"></field>
+                <field name="menu_item_9_url" type="url" default="" label="Link_URL"></field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

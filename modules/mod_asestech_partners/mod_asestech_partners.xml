@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Mod Asestech Partners</name>
+    <author>Felix Aweh</author>
+    <creationDate>February 2015</creationDate>
+    <copyright>Copyright (C) 2014 - 2015 Intracp. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>s23zenden@gmail.com</authorEmail>
+    <version>1.0.0</version>
+    <description>Asestech Partners</description>
+    <files>
+        <file module="mod_asestech_partners">mod_asestech_partners.php</file>
+        <file>html.php</file>
+        <file>mod_asestech_partners.xml</file>
+
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="partner_1" type="text" default="" label="Partner 1"></field>
+                <field name="partner_1_logo" type="media" default="" label="Partner-1 logo" directory="stories"></field>
+                <field name="partner_1_link" type="text" default="" label="Partner-1 link"></field>
+
+                <field name="partner_2" type="text" default="" label="Partner 2"></field>
+                <field name="partner_2_logo" type="media" default="" label="Partner-2 logo" directory="stories"></field>
+                <field name="partner_2_link" type="text" default="" label="Partner-2 link"></field>
+
+                <field name="partner_3" type="text" default="" label="Partner 3"></field>
+                <field name="partner_3_logo" type="media" default="" label="Partner-3 logo" directory="stories"></field>
+                <field name="partner_3_link" type="text" default="" label="Partner-3 link"></field>
+
+                <field name="partner_4" type="text" default="" label="Partner 4"></field>
+                <field name="partner_4_logo" type="media" default="" label="Partner-4 logo" directory="stories"></field>
+                <field name="partner_4_link" type="text" default="" label="Partner-4 link"></field>
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>
