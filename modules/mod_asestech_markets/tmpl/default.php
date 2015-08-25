@@ -1,7 +1,7 @@
 <?php defined('_JEXEC') or die('Access Deny'); ?>
 
 
-<div class="row">
+<div class="row" id="asestech_markets">
     <div class="col-md-4">
         <?php if($market_1_image):?>
             <div class="col-md-4">

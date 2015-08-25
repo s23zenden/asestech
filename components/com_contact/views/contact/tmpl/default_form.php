@@ -1,3 +1,31 @@
+<script>
+    function resizeGMaps() {
+        jQuery.noConflict()(function($) {
+            var $gmaps = $('.gmaps');
+            $gmaps.width($(window).width() - $gmaps.offset().left);
+        });
+    }
+
+    jQuery.noConflict()(function($) {
+        resizeGMaps();
+        $(window).resize(resizeGMaps);
+    });
+</script>
+<style>
+    .google-maps {
+        position: relative;
+        padding-bottom: 50%; // This is the aspect ratio
+    height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;*/
+    }
+</style>
 <?php
 /**
  * @package     Joomla.Site
@@ -102,6 +130,11 @@ if (isset($this->error)) : ?>
     </div>
 </div>
 
-<div class="row row-bordered" style="padding-top: 40px; padding-bottom: 20px">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.1052990433263!2d5.4925834!3d51.43786005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6d8fb25f78017%3A0x1300de5a6fc4dab3!2s5613+DA+Eindhoven!5e0!3m2!1sen!2snl!4v1426526879985" width="1140" height="350" frameborder="0" style="border:1px solid #000000"></iframe>
+<div class="row row-bordered" style="padding-top: 40px; padding-bottom: 20px; padding-right: 20px">
+    <div class="col-md-10">
+        <div class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.1052990433263!2d5.4925834!3d51.43786005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6d8fb25f78017%3A0x1300de5a6fc4dab3!2s5613+DA+Eindhoven!5e0!3m2!1sen!2snl!4v1426526879985" width="600" height="350" frameborder="0" style="border:1px solid #000000"></iframe>
+        </div>
+    </div>
 </div>
+

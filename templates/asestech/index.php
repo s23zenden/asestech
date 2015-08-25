@@ -13,7 +13,7 @@ $app = JFactory::getApplication();
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->template; ?>/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->template; ?>/less/bootstrap.less" rel="stylesheet">
+<!--    <link href="--><?php //echo $this->baseurl;?><!--/templates/--><?php //echo $this->template; ?><!--/less/bootstrap.less" rel="stylesheet">-->
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -28,10 +28,11 @@ $app = JFactory::getApplication();
     <!-- Custom styles for this template -->
     <link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->template; ?>/css/carousel.css" rel="stylesheet">
     <link href="<?php echo $this->baseurl;?>/templates/<?php echo $this->template; ?>/css/simplyscroll.css" rel="stylesheet" media="all">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
     <script src="<?php echo $this->baseurl;?>/templates/<?php echo $this->template; ?>/js/bootstrap.min.js"></script>
-    <script src="<?php echo $this->baseurl;?>/templates/<?php echo $this->template; ?>/js/less.js"></script>
-    <script src="<?php echo $this->baseurl;?>/templates/<?php echo $this->template; ?>/js/simplyscroll.min.js"></script>
+<!--    <script src="--><?php //echo $this->baseurl;?><!--/templates/--><?php //echo $this->template; ?><!--/js/less.js"></script>-->
+<!--    <script src="--><?php //echo $this->baseurl;?><!--/templates/--><?php //echo $this->template; ?><!--/js/simplyscroll.min.js"></script>-->
 
       <script type="text/javascript">
           (function($) {
@@ -40,29 +41,27 @@ $app = JFactory::getApplication();
               });
           })(jQuery);
       </script>
+
   </head>
 
   <body>
     <!--Main Module Position-->
     <?php if($this->countModules('menu')): ?>
-    <div class="container" style="margin-bottom: -18px">
+        <div class="container" style="margin-bottom: -19px">
             <jdoc:include type="modules" name="menu" style="none" />
+        </div>
+    <?php endif; ?>
+    <!--Carousel Module position-->
+    <?php if($this->countModules('carousel')): ?>
+        <div class="container fill">
+            <jdoc:include type="modules" name="carousel" style="none" />
         </div>
     <?php endif; ?>
 
 
-
 <!--    <div class="container">-->
         <div class="marketing container">
-            
-                <!--Carousel Module position-->
-            <?php if($this->countModules('carousel')): ?>
-                <div class="container">
-                    <jdoc:include type="modules" name="carousel" style="none" />
-                </div>
-            <?php endif; ?>
-                
-                
+
             <?php if($this->countModules('core1') || $this->countModules('core2') || $this->countModules('core3')):?>
                 <div class="container ">
                     <div class="row">
@@ -138,17 +137,17 @@ $app = JFactory::getApplication();
                         </div>
                     </div>
                 </div>
-            </div>            
 
-            <!-- FOOTER -->
-            <footer class="panel-footer" style="border-top: 1px; background-color: #eeeeee">
-                <div class="container">
-                    <jdoc:include type="modules" name="footer"/>
-                </div>
-            </footer>
+                <!-- FOOTER -->
+
+            </div>
 
         </div><!-- /.container -->
-
+        <div class="">
+            <footer class="panel-footer bottom" style="">
+                <jdoc:include type="modules" name="footer"/>
+            </footer>
+        </div>
 <!--    </div>-->
 
   </body>

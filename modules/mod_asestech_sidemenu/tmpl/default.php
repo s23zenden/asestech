@@ -6,15 +6,21 @@
     }
     .nav-pills > li > a:hover{
         color: #FFFFFF;
-        background-color:#108F28 !important;
+        background-color:#e0a800 !important;
     }
 
     .nav-pills > li.active > a{
-        background-color: #108F28 !important;
+        background-color: #e0a800 !important;
+    }
+
+    .nav-sidebar{
+        border-radius: 1em;
+        padding: 5px;
+        background-color: #EEE;
     }
 </style>
 
-    <div class="row" style="border-radius: 1em; padding: 5px; background-color: #EEE;">
+    <div class="row nav-sidebar">
         <ul class="nav nav-pills nav-stacked">
             <?php if($menu_item_1):?>
                 <li><a href="<?php echo $menu_item_1_url?>"><?php echo $menu_item_1;?></a></li>
@@ -56,15 +62,14 @@
 
 
         // Get current URL and replace baseURL
-        var href = window.location.href.replace(baseURL, '');
+        var href = window.location.href.concat('');
 
         // Remove trailing slash
         href = href.substr(-1) == '/' ? href.substr(0, href.length - 1) : href;
 
-
         // Select link based on href attribute and set it's closest 'li' to 'active'.
         // .siblings('.active').removeClass() is only needed if you have a default 'active li'.
-        $('a[href="' + href +'"]', '.nav li').closest('li').addClass('active').siblings('.active').removeClass();
+        $('a[href="' + href +'"]', '.nav-pills li').closest('li').addClass('active').siblings('.active').removeClass();
 
     });
 </script>

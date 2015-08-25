@@ -40,7 +40,9 @@ defined('_JEXEC') or die;
 	}
 </style>
 <?php if($image):?>
-    <img class="img-circle" src="<?php echo $image ?>" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+	<a href="<?php echo $read_more_link; ?>">
+		<img class="img-circle" src="<?php echo $image ?>" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+	</a>
 <?php endif;?>
 <?php if($icon_position == 'heading-left' || $icon_position == 'heading-left') : ?>
 	<h3 style="color:<?php echo $headingcolor; ?>">

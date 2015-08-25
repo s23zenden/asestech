@@ -24,7 +24,7 @@ defined('_JEXEC') or die;
 /*}*/
 
 .navbar-nav > li > a:hover{
-    background-color: #108F28 !important;
+    color: #e0a800 !important;
 }
 
 .navbar-nav > li > a{
@@ -33,7 +33,7 @@ defined('_JEXEC') or die;
 }
 
 .dropdown-menu > li > a:hover{
-    background-color:#108F28 !important;
+    background-color:#e0a800 !important;
 }
 
 .dropdown-menu .sub-menu {
@@ -73,15 +73,26 @@ defined('_JEXEC') or die;
     top: 11px;
     left: -6px;
 }
-
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: transparent;
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
      background: <?php echo $active_background_color; ?> !important;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.brandImg{
+    margin-top: 3px; ;
+}
+.navbar-nav > li.active > a{
+    color: <?php echo $active_background_color; ?> !important;
 }
 </style>
 <?php if($nav_type == 'navbar') : ?>
 <div class="navbar <?php echo $fixed; ?>" role="navigation">
     <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header brandImg">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -111,7 +122,7 @@ defined('_JEXEC') or die;
                             <li class="<?php echo $class; ?>"><a href="<?php echo $item->flink; ?>"><?php echo $item->title; ?></a></li>
                         <?php endif; ?>
                     <?php elseif($item->parent) : ?>
-                         <li class="dropdown">
+                         <li class="dropdown <?php echo $class; ?>">
                     <a href="<?php echo $item->flink; ?>" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $item->title; ?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <?php foreach ($list as $i => &$subitem) : ?>                                   
